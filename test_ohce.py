@@ -26,3 +26,7 @@ def test_reverse_input():
 def test_palindrome():
     ohce = Ohce("Pedro")
     assert ohce.process_input("oto") == "oto\n¡Bonita palabra!"
+
+def test_stop():
+    ohce = Ohce("Pedro")
+    assert ohce.process_input("Stop!") == "Adios Pedro"
