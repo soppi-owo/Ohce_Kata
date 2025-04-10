@@ -22,3 +22,7 @@ def test_greeting_night(mocker):
 def test_reverse_input():
     ohce = Ohce("Pedro")
     assert ohce.process_input("hola") == "aloh"
+
+def test_palindrome():
+    ohce = Ohce("Pedro")
+    assert ohce.process_input("oto") == "oto\n¡Bonita palabra!"
