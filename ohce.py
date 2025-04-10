@@ -14,6 +14,8 @@ class Ohce:
             return f"¡Buenas noches {self.name}!"
         
     def process_input(self, text):
+        if text == "Stop!":
+            return f"Adios {self.name}"
         reversed_text = text[::-1]
         if text == reversed_text:
             return f"{reversed_text}\n¡Bonita palabra!"
