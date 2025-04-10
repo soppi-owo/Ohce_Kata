@@ -20,3 +20,20 @@ class Ohce:
         if text == reversed_text:
             return f"{reversed_text}\n¡Bonita palabra!"
         return reversed_text
+    
+    def run(self):
+        print(self.greet())
+        while True:
+            text = input("$ ")
+            result = self.process_input(text)
+            print(result)
+            if text == "Stop!":
+                break
+
+if __name__ == "__main__":
+    import sys
+    if len(sys.argv) != 2:
+        print("Uso: python ohce.py <nombre>")
+    else:
+        ohce = Ohce(sys.argv[1])
+        ohce.run()
