@@ -12,3 +12,6 @@ class Ohce:
             return f"¡Buenas tardes {self.name}!"
         else:  # 20-6
             return f"¡Buenas noches {self.name}!"
+        
+    def process_input(self, text):
+        return text[::-1]
