@@ -18,3 +18,7 @@ def test_greeting_night(mocker):
     mocked_datetime.now.return_value = datetime(2025, 4, 9, 22, 0)  # 22:00
     ohce = Ohce("Pedro")
     assert ohce.greet() == "¡Buenas noches Pedro!"
+
+def test_reverse_input():
+    ohce = Ohce("Pedro")
+    assert ohce.process_input("hola") == "aloh"
